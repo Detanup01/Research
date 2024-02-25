@@ -1,0 +1,22 @@
+Escape From Tarkov
+
+Game using Unity 19, BattlEye, custom FileChecker, Custom Checks, Custom Obfuscation.
+
+Doing the funny
+
+de4dot is great at deobfuscating the Assembly-CSharp, Comfort.Unity or Comfort.
+
+Bypass its checks:
+Because FilesChecker.dll is a C# file you can edit in dnSpy to remove it.
+In Method:
+FilesChecker.ConsistencyMetadataProvider.GetConsistencyMetadata
+
+You can just return an empty array. And it doesnt check for any files.
+
+Custom check.
+ConsistencyInfo is just a json file. you can edit it.
+
+Dumping
+Assembly-CSharp-firstpass.dll contains BattlEye code.
+
+BattlEye.DecryptPacket, BattlEye.EncryptPacket contains both the dec, and the enc packet, you can dump both.
