@@ -1,0 +1,15 @@
+The Beginning
+
+Ah yes, ubisoft, the company that is great at fucking up, and not liking customers.
+
+Currently most of the communication goes tru TLS and HTTP, most of game server operate at UDP.
+
+The Network
+Ubisoft uses protobuf in the Demux server and UbiServices (Custom made after Massgate, kinda like a fork) for every HTTPS.
+
+UbiServices using NGINX for good use.
+
+For UDP communication they usually use PRUDP on old games.
+
+The Protection
+Most of games, application protected by Denuvo, VMP.
